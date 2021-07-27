@@ -1,0 +1,14 @@
+helmDefaults:
+  atomic: false
+  wait: false
+  timeout: 120
+
+releases:
+  - name: gitlabeks-init
+    chart: ./
+    namespace: "gitlabeks"
+    createNamespace: true
+    values:
+      - "values.yaml"
+    secrets:
+      - "secrets.yaml"

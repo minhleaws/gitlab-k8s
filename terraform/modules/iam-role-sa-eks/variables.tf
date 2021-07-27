@@ -1,0 +1,11 @@
+variable "namespace" { type = string }
+variable "common_tags" { type = map(string) }
+variable "oidc_url" { type = string }
+variable "oidc_arn" { type = string }
+variable "kube_namespace" { type = string }
+variable "kube_sa_name" { type = string }
+variable "eks_cluster_endpoint" { type = string }
+variable "eks_cluster_certificate_authority" { type = string }
+variable "eks_cluster_name" { type = string }
+variable "aws_profile" { type = string }
+variable "policy" { type = string }

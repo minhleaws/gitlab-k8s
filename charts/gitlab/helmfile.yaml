@@ -1,0 +1,17 @@
+helmDefaults:
+  atomic: false
+  wait: false
+  timeout: 120
+
+repositories:
+  - name: gitlab
+    url: https://charts.gitlab.io/
+
+releases:
+  - name: gitlab
+    chart: gitlab/gitlab
+    version: 5.1.0   # app version 14.1.1
+    namespace: gitlabeks
+    createNamespace: true
+    values:
+      - gitlab.yaml

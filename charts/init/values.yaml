@@ -1,0 +1,7 @@
+## This will be point to several object in gitlab/gitlab.yaml file
+
+## Setup the secret name
+secretName: gitlabeks-managed-secrets
+
+## Create storageclass ebs gp2
+storageClassName: gitlabeks-ebs-gp2
